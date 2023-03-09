@@ -1,2 +1,1 @@
 # ProgramowanieObiektowe
-# ProgramowanieObiektowe
