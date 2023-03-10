@@ -25,11 +25,15 @@ void Prostokat::SetB(double b) {
 }
 
 double Prostokat::Obwod() {
-    return 2*a+2*b;
+    double obwod = 2*a+2*b;
+    cout << "Obwod prostokata: " << obwod << endl;
+    return obwod;
 }
 
 double Prostokat::Pole() {
-    return a*b;
+    double pole = a*b;
+    cout << "Pole prostokata: " << pole << endl;
+    return pole;
 }
 
 void Prostokat::Wypisz(ostream& out) const {
@@ -37,5 +41,6 @@ void Prostokat::Wypisz(ostream& out) const {
 }
 
 Prostokat::~Prostokat() {
+    cout << "Destruktor prostokata o wymiarach: " << GetA() << "x" << GetB() << endl;
 
 }

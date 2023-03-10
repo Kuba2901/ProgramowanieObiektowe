@@ -6,7 +6,7 @@ using namespace std;
 
 Kolo::Kolo(double r): r(r) {
     // Zmiast r(r) moze byc SetR(r);
-    cout << "Kolo o promieniu: " << r << endl;
+    cout << "Konstruktor kola o promieniu (" << r  << ")" << endl;
 }
 
 double Kolo::GetR() const {
@@ -18,11 +18,18 @@ void Kolo:: SetR(double r) {
 }
 
 double Kolo::Pole()  {
-    return PI*r*r;
+    double pole = PI*r*r;
+
+    cout << "Pole kola wynosi: " << pole << endl;
+    return pole;
 }
 
 double Kolo::Obwod() {
-    return 2*PI*r;
+    double obwod = 2*PI*r;
+
+    cout << "Obwod kola wynosi: " << obwod << endl;
+
+    return obwod;
 }
 
 void Kolo::Wypisz(ostream& out) const {

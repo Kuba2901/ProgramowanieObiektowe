@@ -35,14 +35,17 @@ void Trojkat::SetC(double c) {
 
 double Trojkat::Pole() {
     double p = (a+b+c)/2;
+    double pole = sqrt(p*(p-a)*(p-b)*(p-c));
 
-    cout << p << endl;
+    cout << "Pole trojkata: " << pole << endl;
 
-    return sqrt(p*(p-a)*(p-b)*(p-c));
+    return pole;
 }
 
 double Trojkat::Obwod() {
-    return a+b+c;
+    double obwod = a+b+c;
+    cout << "Obwod trojkata: " << obwod << endl;
+    return obwod;
 }
 
 void Trojkat::Wypisz(ostream& out) const {
