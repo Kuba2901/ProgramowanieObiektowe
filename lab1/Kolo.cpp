@@ -5,6 +5,7 @@
 using namespace std;
 
 Kolo::Kolo(double r): r(r) {
+    // Zmiast r(r) moze byc SetR(r);
     cout << "Kolo o promieniu: " << r << endl;
 }
 
@@ -29,5 +30,5 @@ void Kolo::Wypisz(ostream& out) const {
 }
 
 Kolo::~Kolo() {
-
+    cout << "Destruktor Kola o r = " << r << endl;
 }

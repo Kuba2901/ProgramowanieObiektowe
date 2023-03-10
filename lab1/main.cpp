@@ -1,23 +1,26 @@
 #include <iostream>
-// #include "Prostokat.h"
-// #include "Trojkat.h"
+#include "Prostokat.h"
+#include "Trojkat.h"
 #include "Kolo.h"
 
 using namespace std;
 
 int main() {
-    // Prostokat prostokat = Prostokat(10.0, 20.0);
+    // Deklaracje zmiennych lokalnych
+    Prostokat prostokat = Prostokat(10.0, 20.0);
+    Trojkat trojkat = Trojkat(11, 20, 30);
+    Kolo kolo = Kolo(20);
 
-    // double pole = prostokat.Pole();
+    // Deklaracje przez wskazniki
+    Prostokat* pP = &prostokat;
+    Trojkat* pT = &trojkat;
+    Kolo* pK = &kolo;
 
-    // cout << pole << endl;
+    // Konstruktory wypisuja sie przy deklaracji zmiennych lokalnych
 
-    // Trojkat trojkat = Trojkat(11.0, 20, 30);
-
-    Kolo kolo = Kolo(10);
+    
 
 
-    cout << kolo.Obwod() << endl;
 
     return 0;
 }

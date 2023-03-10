@@ -5,6 +5,7 @@
 using namespace std;
 
 Trojkat::Trojkat(double a, double b, double c): a(a), b(b), c(c) {
+    // Zmiast a(a) moze byc SetA(a) i analogicznie SetB(b) oraz SetC(c);
     cout << "Konstruktor Trojkata (" << a << "," << b << "," << c << ")" << endl;
 } 
 
@@ -48,6 +49,6 @@ void Trojkat::Wypisz(ostream& out) const {
 }
 
 Trojkat::~Trojkat() {
-
+    cout << "Destruktor Trojkata (" << a << "," << b << "," << c << ")" << endl;
 }
 

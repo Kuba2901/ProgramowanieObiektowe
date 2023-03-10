@@ -4,6 +4,7 @@
 using namespace std;
 
 Prostokat::Prostokat(double a, double b): a(a), b(b) {
+    // Zmiast a(a) moze byc SetA(a) i analogicznie SetB(b);
     cout << "Konstruktor Prostokata (" << a << "," << b << ")" << endl;
 }
 
@@ -32,7 +33,7 @@ double Prostokat::Pole() {
 }
 
 void Prostokat::Wypisz(ostream& out) const {
-    cout << "Prostokat o wymiarach: " << a << "x" << b << endl;
+    cout << "Prostokat o wymiarach: " << GetA() << "x" << GetB() << endl;
 }
 
 Prostokat::~Prostokat() {
