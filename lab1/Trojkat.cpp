@@ -51,6 +51,13 @@ double Trojkat::Obwod() {
 void Trojkat::Wypisz(ostream& out) const {
 }
 
+void Trojkat::ZnajdzFigure(double pole)  {
+    // double a = sqrt(pole);
+    SetA(2);
+    SetB(2);
+    SetC(3);
+}
+
 Trojkat::~Trojkat() {
     cout << "Destruktor Trojkata (" << a << "," << b << "," << c << ")" << endl;
 }

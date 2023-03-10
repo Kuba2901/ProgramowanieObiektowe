@@ -24,5 +24,7 @@ class Prostokat: public FiguraPlaska {
         double Pole() override;
         double Obwod() override;
 
+        void ZnajdzFigure(double pole) override;
+
         ~Prostokat() override;
 };

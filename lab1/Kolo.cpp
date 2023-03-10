@@ -1,5 +1,6 @@
 #include "Kolo.h"
 #include <iostream>
+#include <tgmath.h>
 #define PI 3.14
 
 using namespace std;
@@ -33,8 +34,16 @@ double Kolo::Obwod() {
 }
 
 void Kolo::Wypisz(ostream& out) const {
+    
+}
+
+void Kolo::ZnajdzFigure(double pole)  {
+    double r = sqrt(pole/PI);
+
+    SetR(r);
 
 }
+
 
 Kolo::~Kolo() {
     cout << "Destruktor Kola o r = " << r << endl;

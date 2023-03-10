@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Prostokat.h"
 #include "Trojkat.h"
@@ -12,26 +13,29 @@ void printName(string firstName, string lastName);
 void zadanie3();
 
 int main() {
-    // Deklaracje zmiennych lokalnych
+    // // Deklaracje zmiennych lokalnych
     Prostokat prostokat = Prostokat(10.0, 20.0);
     Trojkat trojkat = Trojkat(11, 20, 30);
     Kolo kolo = Kolo(20);
 
-    // Deklaracje przez wskazniki
-    Prostokat* pP = &prostokat;
-    Trojkat* pT = &trojkat;
-    Kolo* pK = &kolo;
+    kolo - prostokat;
 
-    // Zadanie 1
-    zadanie1(prostokat, trojkat, kolo);
+    // // Deklaracje przez wskazniki
+    // Prostokat* pP = &prostokat;
+    // Trojkat* pT = &trojkat;
+    // Kolo* pK = &kolo;
 
-    // TODO: metoda wypisz
+    // // Zadanie 1
+    // zadanie1(prostokat, trojkat, kolo);
 
-    // Zadanie 2
-    zadanie2(pP, pT, pK);
+    // // TODO: metoda wypisz
+
+    // // Zadanie 2
+    // zadanie2(pP, pT, pK);
      
-    // Zadanie 3
-    zadanie3();
+    // // Zadanie 3
+    // zadanie3();
+
 
 
 
@@ -52,6 +56,7 @@ void zadanie1(Prostokat prostokat, Trojkat trojkat, Kolo kolo) {
     // Metody kola (z wypisywaniem do couta, ale takze zwracaniem wartosci)
     kolo.Pole();
     kolo.Obwod();
+    
 }
 
 

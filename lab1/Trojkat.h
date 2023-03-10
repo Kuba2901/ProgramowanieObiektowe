@@ -25,6 +25,9 @@ class Trojkat: public FiguraPlaska {
         double Obwod() override;
         double Pole() override;
 
+        void ZnajdzFigure(double pole) override;
+
+
         ~Trojkat() override;
 
     private:

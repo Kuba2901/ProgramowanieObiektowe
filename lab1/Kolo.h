@@ -19,6 +19,7 @@ class Kolo: public FiguraPlaska {
 
         double Pole() override;
         double Obwod() override;
+        void ZnajdzFigure(double pole) override;
 
         ~Kolo() override;
 

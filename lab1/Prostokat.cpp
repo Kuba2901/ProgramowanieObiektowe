@@ -1,5 +1,6 @@
 #include "Prostokat.h"
 #include <iostream>
+#include <tgmath.h>
 
 using namespace std;
 
@@ -40,7 +41,14 @@ void Prostokat::Wypisz(ostream& out) const {
     cout << "Prostokat o wymiarach: " << GetA() << "x" << GetB() << endl;
 }
 
+void Prostokat::ZnajdzFigure(double pole)  {
+    double a = sqrt(pole);
+    SetA(a);
+    SetB(a);
+}
+
 Prostokat::~Prostokat() {
     cout << "Destruktor prostokata o wymiarach: " << GetA() << "x" << GetB() << endl;
 
 }
+
